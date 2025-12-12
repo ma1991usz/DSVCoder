@@ -142,6 +142,15 @@ class AIEnhancedEmailValidator:
     async def validate(self, email: str) -> EmailValidationResult:
         """Validates email with AI-enhanced checks."""
         normalized = email.lower().strip()
+        
+        # Ensure email contains exactly one '@'
+        if normalized.count('@') != 1:
+            return EmailValidationResult(
+                is_valid=False,
+                normalized=None,
+                validation_level=self.level
+            )
+        
         local, domain = normalized.split('@')
         
         # Typo detection

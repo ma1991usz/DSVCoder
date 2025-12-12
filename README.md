@@ -49,8 +49,8 @@ Pokazuje możliwości na krawędzi technologii. Eksperymentalne podejście, któ
 1. **Kliknij przycisk "Use this template"** w GitHub
 2. **Sklonuj swoje nowe repozytorium**
    ```bash
-   git clone https://github.com/TWOJA-NAZWA/TWOJE-REPO.git
-   cd TWOJE-REPO
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
    ```
 3. **Gotowe!** GitHub Copilot automatycznie wykryje instrukcje z `.github/copilot-instructions.md`
 

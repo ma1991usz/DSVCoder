@@ -239,13 +239,15 @@ def reverse_string(text: T) -> str:
     """
     return reduce(lambda acc, char: char + acc, text, '')
 
-# Alternatywnie - rekurencyjna implementacja z tail call optimization
+# Alternatywnie - rekurencyjna implementacja (tail-recursive pattern)
 def reverse_string_recursive(text: str, acc: str = '') -> str:
     """
-    Odwraca string rekurencyjnie (tail-recursive).
+    Odwraca string rekurencyjnie (tail-recursive pattern).
     
-    Uwaga: Python nie optymalizuje tail recursion,
-    więc to jest bardziej edukacyjne niż praktyczne.
+    Uwaga: Python nie optymalizuje tail recursion (w przeciwieństwie do 
+    języków funkcyjnych jak Haskell czy Scheme), więc to rozwiązanie jest 
+    bardziej edukacyjne niż praktyczne i może spowodować stack overflow 
+    dla długich stringów.
     """
     return acc if not text else reverse_string_recursive(text[1:], text[0] + acc)
 ```
