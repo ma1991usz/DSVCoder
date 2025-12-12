@@ -153,6 +153,14 @@ class AIEnhancedEmailValidator:
         
         local, domain = normalized.split('@')
         
+        # Validate non-empty local and domain parts
+        if not local or not domain or '.' not in domain:
+            return EmailValidationResult(
+                is_valid=False,
+                normalized=None,
+                validation_level=self.level
+            )
+        
         # Typo detection
         suggestion = self._detect_typo(domain)
         

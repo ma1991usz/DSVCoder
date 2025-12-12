@@ -36,7 +36,7 @@ Pokazuje możliwości na krawędzi technologii. Eksperymentalne podejście, któ
 | 🎯 **Cel** | Stabilność i niezawodność | Optymalizacja i elegancja | Innowacja i eksploracja |
 | 👥 **Dla kogo** | Zespoły produkcyjne | Zaawansowani developerzy | Eksperymentatorzy i liderzy tech |
 | ⚡ **Ryzyko** | Minimalne | Niskie-średnie | Średnie-wysokie |
-| 📚 **Krzywą uczenia** | Płaska | Średnia | Stroma |
+| 📚 **Krzywa uczenia** | Płaska | Średnia | Stroma |
 | 🔧 **Utrzymanie** | Bardzo łatwe | Średnie | Wymagające |
 | 💎 **Kiedy użyć** | Projekty produkcyjne | Optymalizacje performance | R&D, prototypy, nauka |
 
